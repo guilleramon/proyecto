@@ -6,8 +6,8 @@ datos = pd.read_csv("titanic.csv")
 
 fig, ax = plt.subplots()
 sns.countplot(x = "Sex", hue = "Survived", data = datos)
-fig.savefig("plot.png")
+fig.savefig("supervivencia_por_sexo.png")
 
 fig, ax = plt.subplots()
 sns.countplot(x = "Pclass", hue = "Survived", data = datos)
-fig.savefig("plot2.png")
+fig.savefig("supervivencia_por_clase.png")
